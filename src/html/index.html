@@ -6,15 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evaluación final</title>
+  <!--import fonts in a partial-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-  <header>
-    <img src="../images/ico-menu.svg" alt="Menú" title="Menú">
-    <h1>Anonymous proxy</h1>
-    <!--uppercase-->
-    <p>In hac habitasse platea dictumst</p>
-    <img src="../" alt="Flecha hacia abajo" title="Menú hacia abajo">
+  <header class="header">
+    <button type="button" class="header-menu button"><img src="../../public/assets/images/icon-menu-1.png" alt="Menú"
+        title="Menú"></button>
+    <h1 class="header-title">Anonymous proxy</h1>
+    <p class="header-p">In hac habitasse platea dictumst</p>
+    <!--add scroll to 2nd section-->
+    <img class="header-scroll" src="../../public/assets/images/arrow-down-1.png" alt="Flecha hacia abajo"
+      title="Menú hacia abajo">
   </header>
   <main>
     <section>
@@ -24,7 +30,7 @@
       <!--capitalize-->
       <p>Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus
         semper sodales rutrum.</p>
-      <input type="button" value="Go">
+      <input type="button" value="Go" class="button">
     </section>
     <section>
       <h2>3 reasons to purchase</h2>
@@ -41,12 +47,12 @@
         <h3>Morbi dictum</h3>
         <p>Aliquam in dolor et dolor tincidunt.</p>
       </div>
-      <input type="button" value="More reasons">
+      <input type="button" value="More reasons" class="button">
       <!--capitalize-->
     </section>
   </main>
   <footer>
-    <img src="../" alt="Flecha hacia arriba" title="Menú hacia arriba">
+    <img src="../../public/assets/images/arrow-up-1.png" alt="Flecha hacia arriba" title="Menú hacia arriba">
     <div>
       <p>&copy 2022</p>
       <p>we heart components</p>

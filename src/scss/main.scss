@@ -1,9 +1,49 @@
-/*@import 'core/variables';
 @import 'core/reset';
-@import 'components/code';
+@import 'core/variables';
+/*@import 'components/code';
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';
 */
+
+.header {
+    background-image: url(../images/cover.jpeg); //the image is not rendering as expected
+    background-size: 100vh 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $icon-background;
+        height: 22px;
+        width: 37px;
+        // margin: 0 100px 280px 0;
+    }
+    &-title { //title is not centered
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        font-family: $title-font;
+        text-transform: uppercase;
+        font-size: 42px;
+        color: $header-font-color;
+        width: 9ch;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    &-p {
+        font-family: $p-font;
+        color: $header-font-color;
+    }
+}
+.button { //removes the styles of the button
+    border: none;
+    padding: 0; //it needs to have padding
+    cursor: pointer;
+}
