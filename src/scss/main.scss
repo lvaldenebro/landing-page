@@ -8,6 +8,8 @@
 @import 'pages/index';
 */
 
+
+ //header
 .header {
     padding-left: 15px;
     padding-right: 15px;
@@ -55,6 +57,7 @@
     padding: 5px 10px 5px 10px;
     border-radius: 22.5px;
 }
+//header
 
 //Hero
 .hero {
@@ -99,7 +102,9 @@
     text-transform: capitalize;
     line-height: 1.25;
 }
+//Hero
 
+//Sect2
 .sect2 {
     width: 100%;
     padding-top: 30px;
@@ -155,3 +160,4 @@
     font-family: $p-font;
 }
 //eoq
+//sect2
