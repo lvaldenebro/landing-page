@@ -26,7 +26,7 @@
         text-transform: uppercase;
         font-size: 42px;
         color: $header-font-color;
-        width: 9ch;
+        width: 9em; //1em=1font-size of element ch=0, id ch n*2
         margin-bottom: 60px;
         text-align: center;
         line-height: 1.3;
