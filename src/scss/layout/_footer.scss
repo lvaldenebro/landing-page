@@ -1,0 +1,60 @@
+.footer {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $footer-background-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $header-footer-font-white;
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 400px;
+        padding-right: 400px;
+        justify-content: space-around;
+    }
+    &-copy {
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: center;
+        padding-bottom: 40px;
+        @media (min-width: 768px) {
+            order: -2;
+        }
+    }
+    &-nav {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 1.9;
+        @media (min-width: 768px) {
+            text-align:left;
+        }
+        &-li {
+            padding: 7px;
+        }
+    }
+    &-our-page {
+        padding-top: 40px;
+        @media (min-width: 768px) {
+            order: -1;
+        }
+    }
+    &-scroll {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translateY(-100%);
+        @media (min-width: 768px) {
+        }
+    }
+}

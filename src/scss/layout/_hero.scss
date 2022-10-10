@@ -1,0 +1,76 @@
+  .hero {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    min-height: 100vh; //image is not showing completely
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    &-menu{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        padding-top: 5px;
+        background-color: $menu-icon-blue;
+        height: 22px;
+        width: 37px;
+        display: flex;
+        justify-content: center;
+        &-img { //does this nested make sense?
+            width: 14px;
+            height: 10px;
+            @media (min-width: 768px) {
+                width: 15px;
+                height: 14px;
+            }
+            @media (min-width: 1200px) {
+                width: 16px;
+            }
+        }
+    }
+    &-title {
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        font-family: $title-font;
+        text-transform: uppercase;
+        font-size: 42px;
+        color: $header-footer-font-white;
+        word-spacing: 100vw; //vw not % | better than ch (ch=0, id ch n*2)
+        margin-bottom: 15px;
+        text-align: center;
+        line-height: 1.3;
+        @media (min-width: 768px) {
+            font-size: 80px;
+            line-height: 1.3;
+        }
+        @media (min-width: 768px) {
+            font-size: 100px;
+        }
+    }
+    &-p {
+        color: $header-footer-font-white;
+        margin-bottom: 100px;
+        @media (min-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 140px;
+        }
+        @media (min-width: 768px) {
+            margin-bottom: 80px;
+        }
+    }
+    &-scroll {
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        @media (min-width: 768px) {
+            padding: 45px;
+        }
+        @media (min-width: 1200px) {
+            bottom: 15px;
+        }
+    }
+}
