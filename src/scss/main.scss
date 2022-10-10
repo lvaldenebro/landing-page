@@ -5,13 +5,13 @@
 /*@import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
+@import 'layout/hero';
 @import 'layout/footer';
 @import 'pages/index';
 */
 
- //header
-.header {
+ //hero
+.hero {
     padding-left: 15px;
     padding-right: 15px;
     background-image: url(../images/cover.jpeg);
@@ -21,52 +21,89 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    &-menu{ //is not correctly fixed
+    &-menu{
         position: fixed;
         top: 0;
         left: 0;
-        background-color: $icon-background;
+        background-color: $menu-icon-blue;
         height: 22px;
         width: 37px;
         display: flex;
         justify-content: center;
+        align-content:center; //does this work?
         padding: 4px;
+        @media (min-width: 768px) {
+            width: 42px;
+            height: 35px;
+        }
+        &-img { //does this nested make sense?
+            width: 14px;
+            height: 10px;
+            @media (min-width: 768px) {
+                width: 15px;
+                height: 14px;
+            }
+            @media (min-width: 1200px) {
+                width: 16px;
+            }
+        }
     }
-    &-title { //title is not centered
+    &-title {
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
         font-family: $title-font;
         text-transform: uppercase;
         font-size: 42px;
-        color: $header-font-color;
+        color: $header-footer-font-white;
         word-spacing: 100vw; //vw not % | better than ch (ch=0, id ch n*2)
         margin-bottom: 15px;
         text-align: center;
         line-height: 1.3;
+        @media (min-width: 768px) {
+            font-size: 80px;
+            line-height: 1.3;
+        }
+        @media (min-width: 768px) {
+            font-size: 100px;
+        }
     }
     &-p {
-        font-family: $p-font;
-        color: $header-font-color;
+        font-family: $general-font;
+        color: $header-footer-font-white;
         margin-bottom: 80px;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
     }
-    &-scroll {
+    &-scroll { //not centered //not working mediaqueries
         width: 17px;
         height: 17px;
-        transform: translateY(-300%);
+        transform: translate(-300%);
+        @media (min-width: 768px) {
+            padding: 45px;
+        }
     }
 }
-//header
+//hero
 
-//Hero
-.hero {
+//sect1
+.sect1 {
     padding-left: 15px;
     padding-right: 15px;
-    font-family: $p-font;
-    width: 100vw; //instead of vw to avoid horizontal scrolling
+    font-family: $general-font;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media (min-width: 768px) {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
     &-subtitle {
-        color: $main-blue-color;
+        color: $sect1-title-blue;
         font-size: 14px;
         text-transform: capitalize;
         margin-top: 50px;
@@ -75,31 +112,48 @@
     &-text {
         padding-top: 10px;
         font-size: 18px;
-        color: $grey-text-color;
+        color: $main-grey;
         padding-bottom: 40px;
         line-height: 1.67;
+        @media (min-width: 768px) {
+            text-size: 20px;
+        }
     }
-    &-button { //does this make sense nested?
+    &-button { //it has color
         width: 76px;
-        color: $main-button-color;
-        background-color: white; //to be changed by a variant
-        border-color: $main-button-color;
+        color: $main-button-orange;
+        background-color: $header-footer-font-white;
+        border-color: $main-button-orange;
         border-style: solid;
         margin-bottom: 40px;
+        @media (min-width: 768px) {
+            width: 91px;
+        }
+        @media (min-width: 768px) {
+            width: 160px;
+        }
     }
     &-h2 {
-        width: 17ch;
+        word-spacing: 33.3%; //not working
     }
 }
 //generic class- to be moved
 .h2 {
     font-family: $title-font;
     font-size: 24px;
-    color: $main-text-color;
+    color: $main-black;
     text-transform: capitalize;
     line-height: 1.25;
+    @media (min-width: 768px) {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
 }
-//Hero
+//sect1
 
 //Sect2
 .sect2 {
@@ -108,54 +162,95 @@
     padding-left: 15px;
     padding-right: 15px;
     display: grid;
-    background-color: $blue-color-background;
+    background-color: $sect2-background-white;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto;
     gap: 40px;
     font-family: $title-font;
     font-size: 18px;
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 50px 20px;
+    }
+    @media (min-width: 1200px) {
+        padding-top: 50px;;
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 50px 40px;
+    }
     &-h2 { //is is not centered
         grid-column: 1/2;
         grid-row: 1/2;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 768px) {
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
     }
     &-art {
         display: block;
         text-align: center;
         &-h3 {
-          font-family: $title-font;
-          font-size: 18px;
-          line-height: 1.7;
+            font-family: $title-font;
+            font-size: 18px;
+            line-height: 1.7;
+            @media (min-width: 768px) {
+            font-size: 24px;
+            }
         }
         &-p {
           line-height: 1.7;
-          font-family: $p-font;
+          font-family: $general-font;
+          @media (min-width: 768px) {
+            font-size: 20px;
+            }
         }
     }
     &-art1 {
         grid-column: 1/2;
         grid-row: 2/3;
+        @media (min-width: 768px) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
     }
     &-art2 {
         grid-column: 1/2;
         grid-row: 3/4;
+        @media (min-width: 768px) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
     }
     &-art3 {
         grid-column: 1/2;
         grid-row: 4/5;
+        @media (min-width: 768px) {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
     }
     &-button-box {
+        grid-column: 1/2;
+        grid-row: 5/6;
         display: flex;
         justify-content: center;
+        @media (min-width: 768px) {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
     }
     &-button { //it is not centered
         width: 185px;
         font-size: 20px;
-        font-family: $p-font;
-        color: $header-font-color;
-        background-color: $main-button-color; //to be changed by a variant
+        font-family: $general-font;
+        color: $header-footer-font-white;
+        background-color: $main-button-orange; //to be changed by a variant
         margin-bottom: 60px;
     }
 }
@@ -165,31 +260,39 @@
 //sect2
 
 //footer
-.footer {
+.footer { //center left side the text in tablet
     width: 100vw;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: $footer-background-color;
+    background-color: $footer-background-blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $header-font-color;
-    font-family: $p-font;
-    &-scroll {
-        width: 25px;
-        height: 25px;
-        transform: translateY(-80%);
+    color: $header-footer-font-white;
+    font-family: $general-font;
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 400px;
+        padding-right: 400px;
+        justify-content: space-around;
     }
     &-copy {
         font-size: 14px;
         line-height: 1.8;
         text-align: center;
         padding-bottom: 40px;
+        @media (min-width: 768px) {
+            order: -2;
+        }
     }
     &-nav {
         text-transform: uppercase;
-        font-size: 16px;
         text-align: center;
         margin-bottom: 40px;
         line-height: 1.9;
@@ -197,8 +300,19 @@
             padding: 7px;
         }
     }
-}
-
-.our-page {
-    padding-top: 40px;
+    &-our-page {
+        padding-top: 40px;
+        @media (min-width: 768px) {
+            order: -1;
+        }
+    }
+    &-scroll { //take a look, it needs to be in flex
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        transform: translate(25vh);
+        @media (min-width: 768px) {
+            transform: translateX(600%) translateY(-500%);
+        }
+    }
 }
