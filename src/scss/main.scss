@@ -1,5 +1,6 @@
 @import 'core/reset';
 @import 'core/variables';
+@import 'components/links-buttons';
 /*@import 'components/code';
 @import 'components/links';
 @import 'layout/page';
@@ -48,27 +49,10 @@
         margin-bottom: 55px;
     }
     &-scroll {
-        background-color: $header-font-color;
-        width: 15px;
-        height: 15px;
-        padding: 10px;
-        border-radius: 50%;
-        margin-bottom: 25px;
+        width: 17px;
+        height: 17px;
     }
 }
-//generic class - to be moved
-
-.button { //removes the styles of the button
-    border: none;
-    padding: 5px 10px 5px 10px;
-    cursor: pointer;
-    display: inline;
-    font-size: 20px;
-    font-weight: 500;
-    height: 45px;
-    border-radius: 22.5px;
-}
-
 //header
 
 //Hero
@@ -78,7 +62,7 @@
     font-family: $p-font;
     width: 100%; //instead of vw to avoid horizontal scrolling
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     justify-content: center;
     &-subtitle {
         color: $main-blue-color;
@@ -139,6 +123,15 @@
     &-art {
         display: block;
         text-align: center;
+        &-h3 {
+          font-family: $title-font;
+          font-size: 18px;
+          line-height: 1.7;
+        }
+        &-p {
+          line-height: 1.7;
+          font-family: $p-font;
+        }
     }
     &-art1 {
         grid-column: 1/2;
@@ -166,14 +159,40 @@
     }
 }
 // Is this nestable?
-.sect2-art-h3 {
-    font-family: $title-font;
-    font-size: 18px;
-    line-height: 1.7;
-}
-.sect2-art-p {
-    line-height: 1.7;
-    font-family: $p-font;
-}
+
 //eoq
 //sect2
+
+//footer
+.footer {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $footer-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $header-font-color;
+    font-family: $p-font;
+    &-scroll {
+        width: 25px;
+        height: 25px;
+        transform: translateY(-50%);
+    }
+    &-copy {
+        font-size: 14px;
+        line-height: 2.1;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    &-nav {
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 40px;
+        &-li {
+            padding: 7px;
+        }
+    }
+}
