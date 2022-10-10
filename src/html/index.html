@@ -14,14 +14,20 @@
 
 <body>
   <!--header-->
-  <header class="header">
+  <header class="header" id="page-top">
     <a href="https://adalab.es/" class="header-menu"><img src="../assets/images/ico-menu.svg" alt="Menú"
         title="Link a adalab.es"></a>
     <h1 class="header-title">Anonymous proxy</h1>
     <p class="header-p">In hac habitasse platea dictumst</p>
     <!--add scroll to 2nd section-->
-    <input type="image" class="header-scroll scroll" src="../assets/images/ico-scroll-down.svg" alt="Flecha hacia abajo"
-      title="Menú hacia abajo">
+    <!--check the changes-->
+    <div class="header-scroll">
+      <!--we need a transform here-->
+      <a href="#3-reasons"><img class="scroll" src="../assets/images/ico-scroll-down.svg" alt="Flecha hacia abajo"
+          title="Menú hacia abajo"></a>
+    </div>
+    <!-- <input type="image" class="header-scroll scroll" src="../assets/images/ico-scroll-down.svg" alt="Flecha hacia abajo"
+      title="Menú hacia abajo"> -->
   </header>
   <!--header-->
 
@@ -38,9 +44,8 @@
     <!--hero-->
 
     <!--sect2-->
-    <section class="sect2">
+    <section class="sect2" id="3-reasons">
       <section class="sect2-h2">
-        <!--to center the text-->
         <h2 class="h2">3 reasons to purchase</h2>
       </section>
       <article class="sect2-art art1">
@@ -64,26 +69,31 @@
 
   <!--footer-->
   <footer class="footer">
-    <input type="image" class="footer-scroll scroll" src="../assets/images/ico-arrow.svg" alt="Flecha hacia arriba"
-      title="Menú hacia arriba">
+    <!-- <input type="image" class="footer-scroll scroll" src="../assets/images/ico-arrow.svg" alt="Flecha hacia arriba"
+      title="Menú hacia arriba"> -->
+    <div class="footer-scroll">
+      <!--check the changes-->
+      <a href="#page-top"><img class="scroll" src="../assets/images/ico-arrow.svg" alt="Flecha hacia abajo"
+          title="Menú hacia abajo"></a>
+    </div>
     <div class="footer-copy">
       <p>&copy 2022</p>
       <p>we <span class="heart">❤︎</span> components</p>
     </div>
     <nav>
       <ul class="footer-nav nav-our-page">
-        <li class="li"><a class="a" href="https://adalab.es/">articles</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">books</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">events</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">reasons</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">tips</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">articles</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">books</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">events</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">reasons</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">tips</a></li>
       </ul>
     </nav>
     <nav>
       <ul class="footer-nav nav-social-media">
-        <li class="li"><a class="a" href="https://adalab.es/">twitter</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">instagram</a></li>
-        <li class="li"><a class="a" href="https://adalab.es/">mastodon.social</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">twitter</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">instagram</a></li>
+        <li class=li><a class="a" href="https://adalab.es/">mastodon.social</a></li>
       </ul>
     </nav>
   </footer>
