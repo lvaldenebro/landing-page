@@ -1,3 +1,16 @@
 .heart {
     color: $main-button-orange;
 }
+
+.animation {
+    animation: 3s infinite slidein;
+    @keyframes slidein {
+        from {
+          transform: translateY(-50%);
+        }
+      
+        to {
+          transform: translateY(-70%);
+        }
+    }
+}

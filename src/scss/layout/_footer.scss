@@ -53,16 +53,6 @@
         z-index: 1;
         left: 50%;
         transform: translateY(-100%);
-        animation: 3s infinite slidein;
-        @keyframes slidein {
-            from {
-              transform: translateY(-50%);
-            }
-          
-            to {
-              transform: translateY(-70%);
-            }
-        }
         &-img {
             width: 21px;
             height: 24px;
