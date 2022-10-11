@@ -49,9 +49,7 @@
         }
     }
     &-scroll {
-        width: 25px;
-        height: 25px;
-        position: absolute;
+        padding: 12px;
         z-index: 1;
         left: 50%;
         transform: translateY(-100%);
@@ -62,10 +60,12 @@
             }
           
             to {
-              transform: translateY(-100%);
+              transform: translateY(-70%);
             }
-          }          
-        @media (min-width: 768px) {
         }
+        &-img {
+            width: 21px;
+            height: 24px;
+            }
     }
 }
