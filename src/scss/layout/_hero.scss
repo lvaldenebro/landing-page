@@ -4,7 +4,7 @@
     padding-right: 15px;
     background-image: url(../images/cover.jpeg);
     background-size: cover;
-    min-height: 100vh; //image is not showing completely
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -13,13 +13,20 @@
         position: fixed;
         top: 0px;
         left: 0;
-        padding-top: 5px;
         background-color: $menu-icon-blue;
         height: 22px;
         width: 37px;
         display: flex;
         justify-content: center;
-        &-img { //does this nested make sense?
+        align-items: center;
+        @media (min-width: 768px) {
+            width: 42px;
+            height: 44px;
+        }
+        @media (min-width: 1200px) {
+            width: 44px;
+        }
+        &-img {
             width: 14px;
             height: 10px;
             @media (min-width: 768px) {
@@ -55,7 +62,7 @@
         @media (min-width: 768px) {
             font-size: 24px;
             margin-bottom: 140px;
-            text-align:center;
+            text-align: center;
         }
         @media (min-width: 768px) {
             margin-bottom: 100px;
@@ -68,7 +75,7 @@
         left: 50%;
         bottom: 50px;
         @media (min-width: 768px) {
-            bottom: 80px;
+            bottom: 70px;
         }
         @media (min-width: 1200px) {
             bottom: 50px;
