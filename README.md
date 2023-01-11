@@ -12,4 +12,4 @@ Here is being tested the use of Sass, HTML, Flexbox, CSS Grid, mediaquieres and 
 
 ### What do you need to check the result
 
-Only to navigate throw this link: lvaldenebro.github.io/landing-page/
+Only to navigate throw this link: [lvaldenebro.github.io/landing-page/](lvaldenebro.github.io/landing-page/)
