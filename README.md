@@ -18,4 +18,4 @@ All this code is released into the public domain.
 
 ## Demo
 
-You can see the [result at GitHub Pages](lvaldenebro.github.io/landing-page/).
+You can see the [result at GitHub Pages](https://lvaldenebro.github.io/landing-page/).
