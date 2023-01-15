@@ -1,15 +1,21 @@
-# 1st Module Final Evaluation
+# Landing Page
 
-This is the exam of the fist module of the Adalab course.
+This an example of an static landing page for a company. This was developed as the exam of the first module of the Adalab bootcamp.
 
 ## Technologies used
 
-This evaluation is developed using HTML, Sass and the Adalab Web Starter Kit (NodeJS and Gulp).
+The landing page uses HTML, Sass and the Adalab Web Starter Kit (NodeJS and Gulp).
+The layout is organized throught Flexbox, CSS Grid, mediaquieres and transitions.
+The original design was provided to us by Zeplin.
 
-### What is being tested
+## Installation
 
-Here is being tested the use of Sass, HTML, Flexbox, CSS Grid, mediaquieres and transitions.
+Clone the repository and run `npm install` to create the `node_modules` folder.
+Use it locally with `npm start`.
 
-### What do you need to check the result
+## License
+All this code is released into the public domain.
 
-Only to navigate throw this link: [lvaldenebro.github.io/landing-page/](lvaldenebro.github.io/landing-page/)
+## Demo
+
+You can see the [result at GitHub Pages](lvaldenebro.github.io/landing-page/).
