@@ -13,7 +13,10 @@ The original design was provided to us by Zeplin.
 Clone the repository and run `npm install` to create the `node_modules` folder.
 Use it locally with `npm start`.
 
+If you want to deploy the code into GitHub Pages, once the code is done and pushed run npm run docs and add, commit and push the updated docs folder.
+
 ## License
+
 All this code is released into the public domain.
 
 ## Demo
